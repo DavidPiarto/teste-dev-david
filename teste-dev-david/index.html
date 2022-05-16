@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Teste - David Custódio</title>
+</head>
+
+<body>
+
+    <br>
+
+    <!-- Div Global -->
+    <div class="container">
+
+        <div class="text-center">
+            <h1>Formulário</h1>
+            <hr>
+        </div>
+
+        <!-- Pergunta A -->
+        <div id="perguntaA">
+
+            <div class="text-center">
+                <p>Antes de começarmos a pesquisa, por gentileza nos informe a sua idade:</p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idade" id="menos18">
+                    <label class="form-check-label" for="menos18">
+                        Menos de 18 anos
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idade" id="18a20">
+                    <label class="form-check-label" for="18a20">
+                        De 18 a 20 anos
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idade" id="21a30">
+                    <label class="form-check-label" for="21a30">
+                        De 21 a 30 anos
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idade" id="31a40">
+                    <label class="form-check-label" for="31a40">
+                        De 31 a 40 anos
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idade" id="41a50">
+                    <label class="form-check-label" for="41a50">
+                        De 41 a 50 anos
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idade" id="51a60">
+                    <label class="form-check-label" for="51a60">
+                        De 51 a 60 anos
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="idade" id="mais60">
+                    <label class="form-check-label" for="mais60">
+                        Mais de 60 anos
+                    </label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botaoA" class="btn btn-primary">Continuar</button>
+            </div>
+        </div>
+
+        <!-- Pergunta 01 -->
+        <div id="pergunta01" style="display: none;">
+
+            <div class="text-center">
+                <p>Quando pensa em plano de saúde, qual é o nome da operadora que primeiro lhe vem à cabeça?</p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <select class="form-select" id="planos" style="width: 50%;">
+                    <option value="0" selected disabled>Escolha uma opção</option>
+                    <option value="Ameplan (Assistência Médica Planejada)">Ameplan (Assistência Médica Planejada)
+                    </option>
+                    <option value="Alice">Alice</option>
+                    <option value="Allianz">Allianz</option>
+                    <option value="Amil / DIX / Medial / One Health">Amil / DIX / Medial / One Health</option>
+                    <option value="Assim Saúde">Assim Saúde</option>
+                    <option value="BioVida">BioVida</option>
+                    <option value="Bradesco">Bradesco</option>
+                    <option value="Care Plus">Care Plus</option>
+                    <option value="CCG (centro clínico gaúcho)">CCG (centro clínico gaúcho)</option>
+                    <option value="Clinipam">Clinipam</option>
+                    <option value="E-vida">E-vida</option>
+                    <option value="Golden Cross / Vision Med">Golden Cross / Vision Med</option>
+                    <option value="GreenLine">GreenLine</option>
+                    <option value="Hapvida/ São Francisco">Hapvida/ São Francisco</option>
+                    <option value="Ipasgo">Ipasgo</option>
+                    <option value="NotreDame Intermédica">NotreDame Intermédica</option>
+                    <option value="Omint">Omint</option>
+                    <option value="Porto Seguros / Itaú Saúde">Porto Seguros / Itaú Saúde</option>
+                    <option value="Prevent Senior">Prevent Senior</option>
+                    <option value="Pró Médica">Pró Médica</option>
+                    <option value="Sami">Sami</option>
+                    <option value="Saúde Caixa / Caixa Seguros /Rede Gama">Saúde Caixa / Caixa Seguros /Rede Gama
+                    </option>
+                    <option value="Saúde Sim">Saúde Sim</option>
+                    <option value="Sompo Saúde / Marítima">Sompo Saúde / Marítima</option>
+                    <option value="SulAmérica">SulAmérica</option>
+                    <option value="Trasmontano">Trasmontano</option>
+                    <option value="Unimed">Unimed</option>
+                    <option value="CNU (Central Nacional Unimed)">CNU (Central Nacional Unimed)</option>
+                    <option value="Seguros Unimed">Seguros Unimed</option>
+                    <option value="Qsaúde">Qsaúde</option>
+                    <option value="Vitallis">Vitallis</option>
+                    <option value="NA (Não Aplicável)">NA (Não Aplicável)</option>
+
+                </select>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao01" class="btn btn-primary">Continuar</button>
+            </div>
+
+        </div>
+
+        <!-- Pergunta 02 -->
+        <div id="pergunta02" style="display: none;">
+
+            <div class="text-center">
+                Por ordem de prioridade, peço que diga o que considera mais importante na gestão do seu plano de
+                previdência, onde 1 é o mais importante e 5 é o menos importante?
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <span class="mx-2 mt-1">1º</span>
+                <select class="form-select" id="ordem" style="width: 50%;">
+                    <option value="0" selected disabled>Escolha uma opção</option>
+                    <option value="1">Resultado dos investimentos do plano</option>
+                    <option value="2">Atendimento da área de relacionamento institucional</option>
+                    <option value="3">Atendimento (e-mail, site, telefone )</option>
+                    <option value="4">Compromisso com a Integridade</option>
+                    <option value="5">Consultoria Previdenciária</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao02" class="btn btn-primary">Próximo</button>
+            </div>
+
+        </div>
+        <!-- Pergunta 03 -->
+        <div id="pergunta03" style="display: none;">
+
+            <div class="text-center">
+                <p>O quanto você se considera informado sobre as condições, regras e informações do seu plano de
+                    previdência do IBRC?
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="informacoes" id="na">
+                    <label class="form-check-label" for="na">
+                        NA (Não Aplicável)
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="informacoes" id="mbi">
+                    <label class="form-check-label" for="mbi">
+                        Muito bem informado
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="informacoes" id="bi">
+                    <label class="form-check-label" for="bi">
+                        Bem informado
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="informacoes" id="momi">
+                    <label class="form-check-label" for="momi">
+                        Mais ou menos informado
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="informacoes" id="mi">
+                    <label class="form-check-label" for="mi">
+                        Mal informado
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="informacoes" id="mmi">
+                    <label class="form-check-label" for="mmi">
+                        Muito mal informado
+                    </label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao03" class="btn btn-primary">Continuar</button>
+            </div>
+        </div>
+
+        <!-- Pergunta 04 -->
+        <div id="pergunta04" style="display: none;">
+
+            <div class="text-center">
+                <p>Por qual razão se sente mal informado em relação ao seu plano de previdência do IBRC?
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkRazao" value="" id="nsopees">
+                    <label class="form-check-label" for="nsopees">
+                        Não sabe onde pode encontrar essas informações
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkRazao" value="" id="ntinqs">
+                    <label class="form-check-label" for="ntinqs">
+                        Não tem interesse / Não quer saber
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkRazao" value="" id="amcotsmt">
+                    <label class="form-check-label" for="amcotsmt">
+                        Acha muito confuso, os termos são muito técnicos
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkRazao" value="" id="emeldpsm">
+                    <label class="form-check-label" for="emeldpsm">
+                        É muito extenso, longo demais. Poderia ser menor
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkRazao" value="" id="esm22">
+                    <label class="form-check-label" for="esm22">
+                        Está sempre mudando
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkRazao" value="" id="om22">
+                    <label class="form-check-label" for="om22">
+                        Outro motivo
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input identNA" type="checkbox" name="checkRazao" value="" id="nana"
+                        onclick="naoAplicavel();">
+                    <label class="form-check-label" for="nana">
+                        NA (Não Aplicável)
+                    </label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao04" class="btn btn-primary">Continuar</button>
+            </div>
+
+        </div>
+
+        <!-- Pergunta 05 -->
+        <div id="pergunta05" style="display: none;">
+
+            <div class="text-center">
+                <p>Você é correntista do IBRC?
+                </p>
+            </div>
+            <div class="d-flex justify-content-center">
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ehcorrentista" id="simc" value="sim">
+                    <label class="form-check-label" for="simc">SIM</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ehcorrentista" id="naoc" value="nao">
+                    <label class="form-check-label" for="naoc">NÃO</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao05" class="btn btn-primary">Continuar</button>
+            </div>
+
+        </div>
+
+        <!-- Pergunta 06 -->
+        <div id="pergunta06" style="display: none;">
+
+            <div class="text-center">
+                <p>Quais produtos você gostaria de ter uma oferta especial como correntista do IBRC?
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="capitalizacao01">
+                    <label class="form-check-label" for="capitalizacao01">
+                        Capitalização
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="cartaocredito01">
+                    <label class="form-check-label" for="cartaocredito01">
+                        Cartão de crédito
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="consorcios01">
+                    <label class="form-check-label" for="consorcios01">
+                        Consórcios
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="contacorrente01">
+                    <label class="form-check-label" for="contacorrente01">
+                        Conta Corrente
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="emprestimo01">
+                    <label class="form-check-label" for="emprestimo01">
+                        Empréstimo
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="financiamento01">
+                    <label class="form-check-label" for="financiamento01">
+                        Financiamento imobiliário
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="odontologico01">
+                    <label class="form-check-label" for="odontologico01">
+                        Plano odontológico
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="seguroauto01">
+                    <label class="form-check-label" for="seguroauto01">
+                        Seguro automóvel
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" id="seguroresi01">
+                    <label class="form-check-label" for="seguroresi01">
+                        Seguro residencial
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center ultimadiv01">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods" value="" onclick="gerarInput01();"
+                        id="outros001">
+                    <label class="form-check-label" for="outros001">
+                        Outros
+                    </label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao06" class="btn btn-primary">Continuar</button>
+            </div>
+
+        </div>
+
+        <!-- Pergunta 07 -->
+        <div id="pergunta07" style="display: none;">
+
+            <div class="text-center">
+                <p>Mesmo não sendo correntista do IBRC, para quais produtos você gostaria de ter uma oferta especial
+                    como cliente do IBRC?
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="capitalizacao02">
+                    <label class="form-check-label" for="capitalizacao02">
+                        Capitalização
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="cartaocredito02">
+                    <label class=" form-check-label" for="cartaocredito02">
+                        Cartão de crédito
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="consorcios02">
+                    <label class="form-check-label" for="consorcios02">
+                        Consórcios
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="contacorrente02">
+                    <label class="form-check-label" for="contacorrente02">
+                        Conta Corrente
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="emprestimo02">
+                    <label class="form-check-label" for="emprestimo02">
+                        Empréstimo
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="financiamento02">
+                    <label class="form-check-label" for="financiamento02">
+                        Financiamento imobiliário
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="odontologico02">
+                    <label class="form-check-label" for="odontologico02">
+                        Plano odontológico
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="seguroauto02">
+                    <label class="form-check-label" for="seguroauto02">
+                        Seguro automóvel
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value="" id="seguroresi02">
+                    <label class="form-check-label" for="seguroresi02">
+                        Seguro residencial
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center ultimadiv02">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="quaisprods02" value=""
+                        onclick="gerarInput02();" id="outros002">
+                    <label class="form-check-label" for="outros002">
+                        Outros
+                    </label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao07" class="btn btn-primary">Continuar</button>
+            </div>
+
+        </div>
+
+        <!-- Pergunta 08 -->
+        <div id="pergunta08" style="display: none;">
+
+            <div class="text-center">
+                <p>Você tem interesse em ter uma conta no IBRC?
+                </p>
+            </div>
+            <div class="d-flex justify-content-center">
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="interesseibrc" id="s03" value="sim">
+                    <label class="form-check-label" for="s03">SIM</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="interesseibrc" id="n03" value="nao">
+                    <label class="form-check-label" for="n03">NÃO</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao08" class="btn btn-primary">Continuar</button>
+            </div>
+
+        </div>
+
+        <!-- Pergunta 09 -->
+        <div id="pergunta09" style="display: none;">
+
+            <div class="text-center">
+                <p>Por último, qual a probabilidade de você indicar a <b><span id="planoEscolhido"></span></b> para
+                    um amigo ou parente? Dê
+                    uma nota de 10 a 0, onde 10 é altamente provável e 0 é nem um pouco provável.
+                </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col text-center">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av1" value="1" />
+                        <label class="form-check-label" for="av1">1</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av2" value="2" />
+                        <label class="form-check-label" for="av2">2</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av3" value="3" />
+                        <label class="form-check-label" for="av3">3</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av4" value="4" />
+                        <label class="form-check-label" for="av4">4</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av5" value="5" />
+                        <label class="form-check-label" for="av5">5</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av6" value="6" />
+                        <label class="form-check-label" for="av6">6</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av7" value="7" />
+                        <label class="form-check-label" for="av7">7</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av8" value="8" />
+                        <label class="form-check-label" for="av8">8</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av9" value="9" />
+                        <label class="form-check-label" for="av9">9</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="avaliacao" id="av10" value="10" />
+                        <label class="form-check-label" for="av10">10</label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao09" class="btn btn-primary">Continuar</button>
+            </div>
+
+        </div>
+
+        <!-- Pergunta 9.1 -->
+        <div id="pergunta091" style="display: none;">
+
+            <div class="text-center">
+                <p>Por qual motivo? </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <input style="width: 50%;" type="text" class="form-control" id="omotivo" placeholder="Relate...">
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao091" class="btn btn-primary">Continuar</button>
+            </div>
+
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div id="pergunta10" style="display: none;">
+
+            <div class="text-center">
+                <p>A quanto tempo trabalha no IBRC? </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <input style="width: 5%;" type="number" min="0" max="10" class="form-control form-control-sm"
+                    id="qntsAnos"> &nbsp; Ano(s)
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+
+                <input style="width: 5%;" type="number" min="0" max="12" class="form-control form-control-sm"
+                    id="qntsMeses"> &nbsp; Mes(es)
+            </div>
+
+            <br>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="botao10" class="btn btn-primary">Finalizar!</button>
+            </div>
+
+        </div>
+
+        <!-- Mensagem Final -->
+        <div id="mensagemFinal" style="display: none;">
+
+            <div class="text-center">
+                <p>Obrigado por responder o formulário!</p>
+                <p>Feito com carinho e dedicação!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- jQuery 3.6 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <!-- Lógica -->
+    <script type="text/javascript" src="logica.js"></script>
+
+</body>
+
+</html>
